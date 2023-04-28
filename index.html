@@ -30,51 +30,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWMFTBN" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Sticky Notes</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                </li>
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
-                    aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" id="delBtn">Delete All</button>
-            </form>
-        </div>
-    </nav>
-
-    <div class="container my-3">
-        <h3>Welcome to sticky notes app</h3>
-        <br>
-        <div class="card">
-            <div class="card-body">
-                <div class="form-group">
-                    <h5 class="card-title">Add title</h5>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="addTitle" placeholder="Enter title">
-                    </div>
-                    <h5 class="card-title">Add a note</h5>
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
-                </div>
-                <button class="btn btn-primary" id="addBtn">Add Notes</button>
-            </div>
-        </div>
-        <br>
-        <hr>
-        <h1>Your Notes</h1>
-        <hr>
-        <div id="notes" class="row container-fluid"> </div>
-    </div>
-
-    <link rel="stylesheet" href="stylefrom.css">
-    <div class="form">
+    <div class="form" style="display: flex; align-items: center;">
         <form name="myform" method="post" class="form" onsubmit="_form_submit_(e)">
             <div class="control">
                 <label for="fname">First Name:<input type="text" name="name" id="fname"
