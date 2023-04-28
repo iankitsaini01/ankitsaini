@@ -105,6 +105,7 @@
     }
     async function _form_submit_(e) {
       return e.preventDefault(),
+     await append_data(e)
         form = e.target,
         form.reset
         !1
