@@ -72,6 +72,46 @@
 
     </div>
 
+    <link rel="stylesheet" href="stylefrom.css">
+    <div class="form">
+      <form name="myform" method="post" class="form">
+        <div class="control">
+          <label for="fname">First Name:<input type="text" name="name" id="fname"
+              placeholder="Enter your first name"></label>
+          <label for="email">Email:<input type="text" name="email" id="email" placeholder="Enter your email"></label>
+          <label for="feedback">Feedback</label>
+          <textarea name="" id="" cols="20" rows="5"></textarea>
+        </div>
+        <br>
+        <input class="button" type="submit" value="Register">
+    </div>
+  
+  <script>
+  
+    let emailHash,
+      form,
+      formdata,
+      page_url = window.location.href;
+  
+    async function append_data(e) {
+      for (
+        formdata = {
+          timestamp: parseInt(Date.now() / 1e3),
+          attributes: {
+            attribute02: form.id,
+            attribute03: page_url
+          }
+        }, i = 0; i < form.length; i++)"INPUT" == form[i].tagName && (formdata[form[i].id] = form[i].value); console.log(formdata)
+    }
+    async function _form_submit_(e) {
+      return e.preventDefault(),
+        form = e.target,
+        form.reset
+        !1
+    }
+  </script>
+  
+  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
