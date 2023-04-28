@@ -31,7 +31,7 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="form" style="display: flex; align-items: center;">
-        <form name="myform" method="post" class="form" onsubmit="_form_submit_(e)">
+        <form name="myform" method="post" class="form" onsubmit="_form_submit_(event)">
             <div class="control">
                 <label for="fname">First Name:<input type="text" name="name" id="fname"
                         placeholder="Enter your first name"></label>
@@ -61,7 +61,7 @@
         //             }
         //         }, i = 0; i < form.length; i++)"INPUT" == form[i].tagName && (formdata[form[i].id] = form[i].value); console.log(formdata)
         // }
-        async function _form_submit_(e) {
+    function _form_submit_(e) {
             e.preventDefault(),
             console.log(e)
                 // append_data(e)
