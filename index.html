@@ -90,27 +90,29 @@
 
     <script>
 
-        let emailHash,
+        let
             form,
-            formdata,
+            // formdata,
             page_url = window.location.href;
 
-      function append_data(e) {
-            for (
-                formdata = {
-                    timestamp: parseInt(Date.now() / 1e3),
-                    attributes: {
-                        attribute02: form.id,
-                        attribute03: page_url
-                    }
-                }, i = 0; i < form.length; i++)"INPUT" == form[i].tagName && (formdata[form[i].id] = form[i].value); console.log(formdata)
-        }
+        // function append_data(e) {
+        //     for (
+        //         formdata = {
+        //             timestamp: parseInt(Date.now() / 1e3),
+        //             attributes: {
+        //                 attribute02: form.id,
+        //                 attribute03: page_url
+        //             }
+        //         }, i = 0; i < form.length; i++)"INPUT" == form[i].tagName && (formdata[form[i].id] = form[i].value); console.log(formdata)
+        // }
         async function _form_submit_(e) {
-         e.preventDefault(),
-            append_data(e)
+            e.preventDefault(),
+            console.log(e)
+                // append_data(e)
             form = e.target,
-                form.reset
-                return   !1
+            console.log(form)
+                // form.reset
+            return !1
         }
     </script>
 
