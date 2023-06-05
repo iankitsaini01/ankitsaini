@@ -1,0 +1,126 @@
+
+// 17. Write a JavaScript function to chop a string into chunks of a given length.Go to the editor
+// Test Data:
+// console.log(string_chop('w3resource'));
+// console.log(string_chop('w3resource', 2));
+// console.log(string_chop('w3resource', 3));
+// ["w3resource"]
+// ["w3", "re", "so", "ur", "ce"]
+// ["w3r", "eso", "urc", "e"]
+
+// 19. Write a JavaScript function to escape a HTML string.Go to the editor
+// Test Data:
+// console.log(escape_HTML('<a href="javascript-string-exercise-17.php" target="_blank">'));
+// Output:
+// "&lt;a href=&quot;javascript-string-exercise-17.php&quot; target=&quot;_blank&quot;&gt;"
+
+
+// Write a JavaScript function to alphabetize a given string. Go to the editor
+// Alphabetize string : An inon-printable ASCII charsndividual string can be alphabetized. This rearranges the letters so they are sorted A to Z.
+// Test Data :
+// console.log(alphabetize_string('United States'));
+// Output :
+// "SUadeeinsttt"
+
+// 28. Write a JavaScript function to convert Hexadecimal to ASCII format. Go to the editor
+// Test Data :
+// console.log(hex_to_ascii('3132'));
+// console.log(hex_to_ascii('313030'));
+// Output :
+// "12"
+// "100"
+
+// Write a JavaScript program to check if a given string contains alphanumeric characters that are palindromes regardless of special characters and letter case. Go to the editor
+// A palindrome is a word, number, phrase, or other sequence of symbols that reads the same backwards as forwards, such as the words madam or racecar, the date/time stamps 11/11/11 11:11 and 02/02/2020, and the sentence: "A man, a plan, a canal - Panama". The 19-letter Finnish word saippuakivikauppias (a soapstone vendor), is the longest single-word palindrome in everyday use, while the 12-letter term tattarrattat (from James Joyce in Ulysses) is the longest in English.
+// Test Data :
+// ('$22_|1372^2731|_22') -> true
+// ('12%^&2') -> false
+// ('234%$$%432') -> true
+// (1234) -> "It must be string"
+// ('aba%$aba') -> true
+// ('Aba%$aba') -> true
+
+// Write a JavaScript function to implement the Boyer-Moore String Search Algorithm. Go to the editor
+// From Wikipedia,
+// In computer science, the Boyer-Moore string-search algorithm is an efficient string-searching algorithm that is the standard benchmark for practical string-search literature. It was developed by Robert S. Boyer and J Strother Moore in 1977. The original paper contained static tables for computing the pattern shifts without an explanation of how to produce them. The algorithm for producing the tables was published in a follow-on paper; this paper contained errors which were later corrected by Wojciech Rytter in 1980. The algorithm preprocesses the string being searched for (the pattern), but not the string being searched in (the text). It is thus well-suited for applications in which the pattern is much shorter than the text or where it persists across multiple searches. The Boyer-Moore algorithm uses information gathered during the preprocess step to skip sections of the text, resulting in a lower constant factor than many other string search algorithms. In general, the algorithm runs faster as the pattern length increases. The key features of the algorithm are to match on the tail of the pattern rather than the head, and to skip along the text in jumps of multiple characters rather than searching every single character in the text.
+// The Boyer-Moore string search algorithm allows linear time in search by skipping indices when searching inside a string for a pattern.
+// Test Data :
+// ('THIS IS A TEST TEXT', 'TEST') -> 10
+// ('THIS IS A TEST TEXT', 'TEST') -> 14
+// Click me to see the solution.
+
+// 52. Write a JavaScript programe to check a given word is exceeding word or not. Go to the editor
+// There is an increasing gap between two adjacent characters in exceeding words. In ASCII, the gap represents the distance between two characters.
+// Test Data :
+// 'acgl' -> true
+// 'aebc' -> false
+// Click me to see the solution.
+
+// Write a JavaScript function that receives a string and determine whether or not it can be rearranged to become a palindrome. Go to the editor
+// When a word, phrase, or sequence can be read both forward and backward, it is considered a palindrome. e.g., madam or nurses run.
+// Test Data :
+// ("maamd") -> true
+// ("civic") -> true
+// ("IO") -> false
+// (12321) -> "It must be a string."
+// Click me to see the solution.
+
+// 58. Write a JavaScript program to find the most frequent character in a given string. Go to the editor
+// Test Data :
+// ("Madam") -> "a"
+// ("civic") -> "c"
+// ("HellloL223LLL") -> "L"
+// (12321) -> "It must be a string."
+// Click me to see the solution.
+
+// 59. Write a JavaScript program to find the most frequent word in a given string. Go to the editor
+// Test Data :
+// ("The quick brown fox jumps over the lazy dog") -> "the"
+// ("Python is a high-level, general-purpose programming language.") -> "python"
+// (" It was the same man, she was sure of it. It's always the same, Chauncey.") -> "was"
+// (12321) -> "It must be a string."
+// Click me to see the solution.
+
+
+// 61. Write a JavaScript function to find the length of longest subsequence present in given two sequences. Go to the editor
+// It is important to understand that a subsequence is a sequence that appears in a similar relative order, but is not necessarily contiguous.
+// Test Data :
+// ("abcda", "abcdef") -> 4
+// ("ABCD", "ACBAD") -> 3
+// ("pqr", "pqr") -> 3
+// ("pqr", "abc") -> 0
+// Click me to see the solution.
+
+// 62. Write a JavaScript function to get the length of the longest valid parentheses (well-formed) from a given string containing just the characters '[' and ']'. Go to the editor
+// Test Data :
+// The longest valid parentheses substring is "[]".
+// ("[[]") -> 2
+// The longest valid parentheses substring is "[][]".
+// ("][][]]") -> 4
+// No valid parentheses substring.
+// ("") -> 0
+// Click me to see the solution.
+
+// 63. Write a JavaScript function to find the length of the longest palindromic subsequence in a given string. Go to the editor
+// Subsequences are sequences that can be created by deleting some or all of the elements from another sequence without changing their order.
+// Test Data :
+// ("aaaba") -> 4
+// ("maadaem") -> 5
+// ("zkksk") -> 3
+// ("ab") -> 1
+// ("") -> ""
+// Click me to see the solution.
+
+// 64. Write a JavaScript function that takes a positive integer and reverse the binary representation of that integer. Finally return the decimal version of the binary string. Go to the editor
+// Test Data :
+// (100) -> 19
+// Explanation:
+// Binary representation of 100 is 1100100
+// Reverse of 1100100 is 10011
+// Decimal form of 10011 is 19
+// (1134) -> 945
+// Explanation:
+// Binary representation of 1134 is 10001101110
+// Reverse of 10001101110 is 1110110001
+// Decimal form of 1110110001 is 945
+// Click me to see the solution.

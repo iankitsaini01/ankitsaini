@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="div_populate.css">
+    <title>Hello, world!</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 95%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaniner" id="demo"></div>1</div>
+    <script>
+        const collection = [
+            { icon: 'clic_icon.svg', name: 'Clic' },
+            { icon: 'databox_icon.svg', name: 'Databox' },
+            { icon: 'domo_icon.svg', name: 'Domo' },
+            { icon: 'grow_icon.svg', name: 'Grow' },
+            { icon: 'looker_icon.svg', name: 'Looker' },
+            { icon: 'micro_icon.svg', name: 'Micro' },
+            { icon: 'oracle_icon.svg', name: 'Oracle' },
+            { icon: 'powerbi_icon.svg', name: 'Power BI' },
+            { icon: 'sisence_icon.svg', name: 'Sisence' },
+            { icon: 'trevor.png', name: 'Trevor' },
+            { icon: 'dashthis_icon.svg', name: 'Dashthis' },
+            { icon: 'gecko_icon.svg', name: 'Geckoboard' },
+            { icon: 'gsheet_icon.svg', name: 'Google Sheets' },
+            { icon: 'metabase.png', name: 'Metabase' },
+            { icon: 'mode.png', name: 'Mode' },
+            { icon: 'panoply_icon.svg', name: 'Panoply' },
+            { icon: 'qliksense_icon.svg', name: 'Qliksense' },
+            { icon: 'tableau_icon.svg', name: 'Tableau' },
+        ];
+
+        let card = ``;
+        function cardGenerate(arr) {
+            collection.forEach(function (obj) {
+                // console.log(obj.icon, obj.name);
+                card += `<a class="card-search" href="https://app.easyinsights.ai" target="_blank">
+                        <img src="/assets/images/desktop_common/Destination-page/${obj.icon}" alt="${obj.name + 'logo'}" />
+                        <span class="card-search-title">${obj.name}</span>
+                    </a>`
+            });
+            document.getElementById('demo').innerHTML = card;
+        }
+        cardGenerate(collection)
+
+    </script>
+</body>
+
+</html>

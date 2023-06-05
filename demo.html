@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>JavaScript Practice</h1>
+    <h2>Add Elements to an array</h2>
+    <input id="input" type="text" />
+    <input type="button" onclick="arrayOps()" id="add" value="Add">
+    <input type="button" id="display" value="display" onclick="display_element()"> <br>
+    <span id="display_element"></span>
+    <script>
+        let array = []
+        function arrayOps() {
+            let inputValue = document.getElementById('input').value
+            array.push(inputValue)
+            console.log(array)
+        }
+        function display_element() {
+            for (let i = 0; i < array.length; i++) {
+                return document.getElementById('display_element').innerText += array[i]
+            }
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

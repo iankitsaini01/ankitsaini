@@ -1,0 +1,321 @@
+.pricing-fold-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pricing-upper-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: auto;
+    
+}
+.pricing-fold-1 .pricing-title {
+    color: var(--black3-color);
+    font-size: 50px;
+    line-height: 58px;
+    margin: auto;
+    padding: 0.5rem;
+}
+.pricing-fold-1 p{
+    margin: auto;
+}
+.pricing-cards-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 62%;
+    gap:3rem;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+.pricing-free {
+    background-image: url(../images/desktop_common/pricing/Free.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pricing-essential {
+    background-image: url(../images/desktop_common/pricing/Essentials.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pricing-enterprise {
+    background-image: url(../images/desktop_common/pricing/Enterprise.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pricing-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 1rem;
+    min-width: 22rem;
+    min-height: 51.125rem;
+}
+.pricing-card-content{
+    padding-top: 4rem;
+}
+.pricing-type {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #2E29FF;
+    border-radius: 17px;
+    padding: 0.5rem 1.5rem;
+    margin-left:1rem;
+}
+.pricing-essential .pricing-type {
+   border: 1px solid #FF9B63;
+}
+.pricing-enterprise .pricing-type{
+    border: 1px solid #39ED56;
+}
+.pricing-card-content h2{
+    font-size: 36px; 
+    color: var(--black3-color);
+    text-align: left; 
+    line-height: 42px;
+    margin: auto;  
+    margin-left: 1rem;
+    padding: 3rem 0 0 0;
+}
+.pricing-card-content h3{
+    font-size: 42px; 
+    color: var(--black3-color);
+    text-align: left;
+    line-height: 42px;
+    margin: auto;
+    margin-left: 1rem;   
+    padding: 3rem 0 0 0;
+}
+.pricing-enterprise .pricing-card-content h3{
+    font-size: 42px; 
+    color: var(--black3-color);
+    text-align: left;
+    line-height: 39px;
+    margin: auto;
+    margin-left: 1rem;   
+    padding: 0rem 0 0 0;
+}
+.pricing-card-content h3 span{
+    font-size: 18px;
+    font-family: Gilroy;
+    font-weight: 500;
+    line-height:26px;
+}
+.white-text {
+    color: var(--white-color) !important;
+}
+.p-sub-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: #6D6280;
+    padding: 0.8rem 1.5rem 1rem 1rem;
+    text-align: left;
+    margin: auto;
+}
+.p-upper-text{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #9A91AB;
+    line-height: 17px;
+    text-align: left;
+    padding: 2rem 1.5rem 0.1rem 1rem;
+    margin: auto;
+}
+.pricing-button-free {
+    padding: 1rem;
+}
+.pricing-button-essential{
+    padding: 1rem 1rem 1rem 1rem;
+}
+.pricing-button-enterprise{
+    padding: 2rem 1rem 1rem 1rem;
+}
+.btn-width {
+    width: 100%;
+}
+.p-services h4{
+    font-family: Gilroy;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color:#2C2140;
+    text-align: left;
+    padding: 1rem;
+    margin: auto;
+}
+.p-services ul {
+    margin: auto;
+}
+.p-services ul li {
+    /* list-style-image: url(../images/desktop_common/pricing/List-icon-green.svg); */
+    background-image: url(../images/desktop_common/pricing/List-icon-green.svg);
+    background-repeat: no-repeat;
+    font-size: 14px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 0px 10px 25px 30px;
+    list-style: none;
+    vertical-align: middle;
+    color:#6D6280;
+    margin-left: -1.5rem;
+}
+.essential-service ul li {
+    /* list-style-image: url(../images/desktop_common/pricing/List-icon-blue.svg); */
+    background-image: url(../images/desktop_common/pricing/List-icon-blue.svg);
+    color:#FFFFFF;
+    line-height: 19px;
+}
+.faq {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p-faq-upper-text {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+}
+.p-faq-title {
+    font-size: 50px;
+    line-height: 58px;
+    color: var(--black3-color);
+    text-align: center;
+    margin: auto;
+}
+
+/* --- accordion --- */
+.c_accordion-body{
+    margin-top: 40px;
+}
+.c_accordion {
+    width: 60%;
+    margin: 15px auto;
+    background-color: white;
+    border: 1px solid #F2EBFF;
+    border-radius: 10px;
+}
+.c_accordion .c_container {
+    position: relative;
+    margin: 10px 10px;
+}
+.c_accordion .c_label {
+    font-weight: 700;
+    font-family: Gilroy;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    padding: 22px 37px;
+    font-size: 18px;
+    color: #77698F;
+    cursor: pointer;
+}
+.c_accordion .c_label::before {
+    content:url(../images/desktop_common/arrows/accordiaon_arrow_right.svg);
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    font-size: 30px;
+    transform: translateY(-50%);
+    transition: all 2s;
+}
+.c_accordion .c_content {
+    position: relative;
+    background: white;
+    font-family: Gilroy;
+    height: 0;
+    max-width: 95%;
+    padding: 0px 47px;
+    margin-left: -10px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: justify;
+    color: #9B94A8;
+}
+.c_accordion .c_container.active .c_content {
+    height: fit-content;
+    padding-bottom: 25px;
+}
+.c_accordion.active {
+    box-shadow: 0px 8px 50px #F3F0FF;
+}
+.c_accordion .c_container.active .c_label::before {
+    content: url(../images/desktop_common/arrows/accordiaon_arrow_up.svg);
+    font-size: 30px;
+}
+.c_content a{
+    text-decoration: none;
+    color: #5506DD;
+}
+.c_content a:hover{
+    text-decoration: none;
+    color: #520CCA;
+    font-weight: 500;
+}
+/* --- accordion end--- */
+@media (max-width: 767px) {
+    .pricing-fold-1 .pricing-title {        
+        line-height: 54px;
+    }
+    .sub-title{
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .pricing-cards-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        gap:1rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .body-bg-gradient-pricing{
+        height: 460vh;
+    }
+    .c_accordion {
+        width: 100%;
+    }
+
+    .c_accordion .c_label {
+        padding: 22px 20px;
+        font-size: 15px;
+        font-weight: 600;   
+    }
+
+    .c_accordion .c_content {
+        padding: 0px 30px 22px 30px;
+        display: none;
+    }
+
+    .c_container.active .c_content {
+        display: block;
+    }
+}

@@ -1,0 +1,236 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: .5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 98%;
+    z-index: 2;
+}
+
+.navbar-container {
+    display: flex;
+    /* flex-wrap: inherit; */
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
+    padding: .2rem;
+    border-radius: 40px;
+}
+
+
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-logo .navbar-logo-link .navbar-logo-img {
+    height: 3rem;
+    padding: .5rem .5rem .5rem 1.5rem;
+
+}
+
+.navbar-button {
+    padding: .5rem 1.5rem .5rem .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+
+}
+
+.navbar-blue-btn {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    color: var(--white-color);
+}
+
+.navbar-items {
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    margin: auto;
+}
+
+.navbar-items .navbar-item {
+    list-style: none;
+}
+
+.navbar-items .navbar-item .navbar-link {
+    text-decoration: none;
+    padding: 1.5rem 1.3rem;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--black3-color);
+    cursor: pointer;
+
+}
+
+.navbar-items .navbar-item .navbar-link:hover {
+    color: var(--blue-color);
+}
+
+.hamburger .hamburger-img {
+    padding: 0rem 1rem 0rem 0rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.normal-hidden {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+
+}
+
+.dropdown-menu-content {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    cursor: default;
+    left: 50%;
+    top: 4rem;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    height: auto;
+    border-top: 1px solid #F2EBFF;
+    background-color: var(--white-color);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0px 48px 50px 0px #e9e5f0;
+}
+
+.dropdown-width-platform {
+    width: 100%;
+
+}
+
+.dropdown-width-resources,
+.dropdown-width-solution {
+    width: 30%;
+
+}
+
+.dropdown-content-section-width-solution,
+.dropdown-content-section-width-resources {
+    width: 100%;
+
+}
+
+
+.dropdown-content-section-width-platform {
+    width: 30%;
+}
+
+.border-left {
+    border-right: 1px solid #F2EBFF;
+}
+
+.dropdown-content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: .5rem;
+
+}
+
+.dropdown-content-section .content-title {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: .2rem;
+    color: var(--black2-color);
+
+}
+
+.dropdown-content-section .content-link {
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0rem;
+
+}
+
+
+.dropdown-content-section .content-link .content-link-title {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    margin: auto;
+    color: var(--black2-color);
+
+}
+
+.dropdown-content-section .content-link .content-link-text {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+
+    color: #6647BD;
+    margin: auto;
+
+
+}
+
+.dropdown-content-section .content-link .dropdown-content-img {
+    padding: .3rem;
+
+
+}
+
+.dropdown-content-section .content-link .clink {
+    text-decoration: none;
+
+
+}
+
+
+.navbar-items .dropdown:hover .dropdown-menu {
+    display: block;
+    /* border-top:2px solid #6647BD ; */
+}
+
+.dropdown .arrow-icon {
+    content: "";
+    background-image: url('../images/desktop_common/dropdown/nav-dropdown-arrow.svg');
+    background-repeat: no-repeat;
+    width: 1%;
+    height: 9%;
+    margin: 0.6rem 0rem 0rem 0.5rem;
+    position: absolute;
+}
+
+.dropdown:hover .arrow-icon {
+    content: "";
+    float: left;
+    background-image: url('../images/desktop_common/dropdown/nav-dropdown-arrow-up.svg');
+}

@@ -1,0 +1,47 @@
+@media screen and (max-width: 767px) {
+    .use-cases-title {
+        padding-top: 3rem;
+        font-size: 38px;
+        line-height: 49px;
+
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-body .card-text {
+        padding: 0rem;
+    }
+
+
+
+    .card-container {
+
+        flex-direction: column;
+
+    }
+
+    .client-images {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .customer-title {
+        padding-top: 5rem;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    br{
+        display: none;
+
+    }
+   .card-container{
+    gap: 3rem;
+    justify-content: space-between;
+   }
+}

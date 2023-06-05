@@ -1,0 +1,13 @@
+@media screen and (min-width:768px) and (max-width:992px) {
+    .policy-container{
+        width: 80%;
+        padding: 3rem;
+        
+    }
+}
+@media screen and (max-width: 767px) {
+    .policy-container{
+        width: 100%;
+        padding: 3rem;
+    }
+}

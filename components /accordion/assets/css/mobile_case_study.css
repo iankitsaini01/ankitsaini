@@ -1,0 +1,39 @@
+@media screen and (max-width:767px) {
+    .cs-stats {
+        flex-direction: column;
+
+    }
+
+    .stats-data {
+        width: 100%;
+    }
+  
+
+    .stats-data .stats-title{
+        font-size: 36px;
+    }
+
+    .cs-bg .cs-title {
+        font-size: 26px;
+        line-height: 35px;
+        padding: 1rem;
+    }
+
+    .cs-content-img .cs-img {
+        width: 100%;
+    }
+
+    .cs-intro .cs-intro-text {
+        padding: 1rem;
+    }
+
+    .cs-table {
+        padding: 1rem;
+        padding-bottom: 6rem;
+    }
+
+    .cs-table .table {
+        width: 100%;
+    }
+
+}

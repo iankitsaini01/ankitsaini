@@ -1,0 +1,192 @@
+.cs-logo {
+    padding-top: 6.938rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+}
+
+.cs-bg {
+    background-image: url('../images/desktop_common/casestudy/gradient-case-study.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 3rem;
+}
+
+.cs-bg .cs-title {
+    color: var(--black3-color);
+    font-size: 36px;
+    line-height: 50px;
+    padding: 3rem;
+}
+
+.cs-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.stats-data {
+    width: 30%;
+
+}
+
+.stats-data .stats-integration {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.stats-data .stats-title {
+    color: var(--black3-color);
+    font-size: 44px;
+    line-height: 12px;
+}
+
+.stats-data .stats-text {
+    font-family: Gilroy;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.cs-content {
+    margin-top: 2.5rem;
+    background: #F8F8F8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+}
+
+.cs-content-img {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+.cs-intro .cs-intro-title{
+    font-size: 26px;
+    line-height: 27px;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.cs-intro .cs-intro-text {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: .5rem;
+    color: #514D6D;
+}
+
+.cs-table {
+    margin-top: 3.25rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.cs-table .table {
+    width: 50%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 0 0 0 2px #B78EFD;
+
+}
+
+.cs-table .table .th-title,
+.td-text {
+    border-right: 1px solid #B78EFD;
+    color: var(--black-color);
+    font-size: 18px;
+    line-height: 168.5%;
+    padding: 1rem;
+    width: 50%;
+}
+
+.cs-table .table .th-title {
+    border-bottom: 1px solid #B78EFD;
+}
+
+.cs-table .table .td-text {
+    font-family: Gilroy;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.cs-testimonial-bg {
+    width: 85%;
+    background: #F8F5FF;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cs-testimonial-bg .cs-testimonial-text {
+    font-family: Gilroy;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--black3-color);
+    padding: 1rem;
+    padding-top: 3rem;
+    margin: auto;
+
+}
+
+.cs-reviewer {
+    width: 18rem;
+    margin: auto;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+.cs-reviewer .reviewer-img {
+    float: left;
+    padding-right: .5rem;
+
+}
+
+.cs-reviewer .reviewer-name {
+    margin: auto;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-align: left;
+
+}
+
+.cs-reviewer .reviewer-designation {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    margin: auto;
+
+}

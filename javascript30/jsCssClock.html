@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        .clockbody {
+            width: 30rem;
+            height: 30rem;
+            border: 20px solid bisque;
+            border-radius: 50%;
+            margin: 50px auto;
+            position: relative;
+            padding: 2rem;
+        }
+
+        .hand {
+            width: 50%;
+            height: 6px;
+            background-color: bisque;
+            position: absolute;
+            top: 50%;
+            transform-origin: 100%;
+            transform: rotate(90deg);
+            transition: all 0.05s;
+            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+        }
+
+        .clock-face {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-3px);
+        }
+
+        body {
+            margin: 0;
+            font-size: 2rem;
+            display: flex;
+            flex: 1;
+            min-height: 100vh;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clockbody">
+        <div class="clock-face">
+            <div class="hand hourhand"></div>
+            <div class="hand minhand"></div>
+            <div class="hand sechand"></div>
+        </div>
+
+    </div>
+</body>
+<script>
+
+    let second,
+        seconds,
+        secondHand,
+        secondDegree,
+        minute,
+        minutes,
+        minuteHand,
+        minuteDegree,
+        hour,
+        hours,
+        hourhand,
+        hourDegree;
+        
+    second = document.querySelector('.sechand');
+    minute = document.querySelector('.minhand');
+    hour = document.querySelector('.hourhand');
+
+    function runClock() {
+        let now = new Date()
+        seconds = now.getSeconds();
+        minutes = now.getMinutes();
+        hours = now.getHours();
+
+        secondDegree = (seconds / 60) * 360 + 90;
+        minuteDegree = (minutes / 60) * 360 + 90;
+        hourDegree = (hours / 12) * 360 + 90;
+
+        second.style.transform = `rotate(${secondDegree}deg)`;
+        minute.style.transform = `rotate(${minuteDegree}deg)`;
+        hour.style.transform = `rotate(${hourDegree}deg)`;
+
+    }
+    setInterval(runClock, 1000)
+
+</script>
+
+</html>

@@ -1,0 +1,25 @@
+@media screen and (min-width: 767px) and (max-width: 992px) {
+
+    .input-100,
+    .input-50 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .input-100,
+    .input-50 {
+        flex-direction: column;
+    }
+
+    .form-container {
+
+        width: 100%;
+        padding: 2rem;
+        padding-bottom: 3rem;
+
+    }
+
+    
+}

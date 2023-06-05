@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .content-container,
+        .text-content,
+        .illsu-content {
+            display: flex;
+
+        }
+
+        .content-container {
+            width: 90rem;
+            margin: auto;
+            padding-top: 8rem;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .text-content,
+        .illsu-content {
+            flex-direction: column;
+        }
+
+        .fold-1-illustartion {
+            box-shadow: 1px 1px 76px #E5E5E5;
+            height: 19rem;
+        }
+
+        .landing-page-title {
+            font-size: 60px;
+            font-family: Open Sans, sans-serif;
+            font-weight: 600;
+            line-height: 130%;
+            width: 39rem;
+        }
+
+        .landing-page-subtitle {
+            font-family: Open Sans, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            width: 39rem;
+            line-height: 160%;
+        }
+
+        .slider {
+            background: #ffffff;
+            height: 75pt;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            cursor: default;
+            user-select: none;
+            touch-action: none;
+            width: 70rem;
+        }
+
+        .slider:before {
+            left: 0;
+            top: 0
+        }
+
+        .slider:after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg)
+        }
+
+        .slider:after,
+        .slider:before {
+            background: linear-gradient(to right, #ffffff 0, hsla(0, 0%, 100%, 0) 100%);
+            content: "";
+            height: 75pt;
+            position: absolute;
+            width: 100px;
+            z-index: 1
+        }
+
+        .slider .slide-track-1 {
+            animation: scroll-l 30s linear infinite;
+            display: flex;
+            width: 3200px
+        }
+
+        .slider .slide-track-2 {
+            animation: scroll-r 30s linear infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 4000px
+        }
+
+        .slider .logo_slide {
+            height: 75pt;
+            width: 160px;
+            display: flex;
+            align-items: center;
+            text-align: center
+        }
+
+        .slider .logo_slide img {
+            width: 120px;
+            padding: 1pc;
+            vertical-align: middle;
+            margin: 0;
+            display: inline-block;
+            max-width: 100%;
+            height: auto
+        }
+
+        @keyframes scroll-l {
+            0% {
+                transform: translateX(0)
+            }
+
+            100% {
+                transform: translateX(calc(-160px * 10))
+            }
+        }
+
+        .clientele_margin {
+            margin: 6rem auto
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 79rem;
+            align-items: center;
+            margin: auto;
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 47px;
+        }
+
+        .easyinsights-logo {
+            height: 3rem;
+        }
+
+        .lets-connect-btn {
+            font-family: Open Sans, sans-serif;
+            border-radius: 30px;
+            border: none;
+            padding: 1rem 5rem;
+            background: #5566DD;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            margin-top: .5rem;
+
+        }
+    </style>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="easyinisghts_logo.png" alt="easyinsights_logo" class="easyinsights-logo">
+                </div>
+                <div class="button">
+                    <a href="">
+                        <button class="lets-connect-btn">Lets Connect</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="content-container">
+                <div class="text-content">
+                    <h1 class="landing-page-title">Build Marketing Dashboards
+                        & Reports in Minutes</h1>
+                    <p class="landing-page-subtitle">EasyInsights is the easiest way to combine marketing & business
+                        data to get actionable Insights</p>
+                </div>
+                <div class="illsu-content"><img class="fold-1-illustartion"
+                        src="/landingpage/landing-page-dataview-illustartion.png"
+                        alt="landing-page-dataview-illustartion"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container clientele_margin">
+                <div class="slider" id="slider">
+                    <div class="slide-track-1" id="slide-track-1"></div>
+                    <div class="slide-track-1" id="slide-track-2"></div>
+                </div>
+            </div>
+            <script defer>
+                const parent1 = document.getElementById('slide-track-1'), parent2 = document.getElementById('slide-track-2'), logos = [{ name: 'alaya.png' }, { name: 'cred.png' }, { name: 'blinkit.png' }, { name: 'cars24.png' }, { name: 'edureka.png' }, { name: 'good_earth.png' }, { name: 'juicy_chemistry.png' }, { name: 'mamaearth.png' }, { name: 'the_whole_truth.png' }, { name: 'urban_company.png' }], imgs = [{ name: 'juicy_chemistry.png' }, { name: 'mamaearth.png' }, { name: 'the_whole_truth.png' }, { name: 'urban_company.png' }, { name: 'alaya.png' }, { name: 'cred.png' }, { name: 'blinkit.png' }, { name: 'cars24.png' }, { name: 'edureka.png' }, { name: 'good_earth.png' }]; let template = ""; let template1 = "";
+                function genClientele(array, parent) { array.forEach(element => { template += `<div class="logo_slide"><img loading="lazy" src="clientele_n/${element.name}" width="300" height="240" alt="${element.name}_logo"></div>` }); parent.innerHTML = template; }
+                function mgenClientele(array, parent) { array.forEach(element => { template1 += `<div class="logo_slide"><img loading="lazy" src="../assets/images/desktop_common/clientele_n/${element.name}" width="300" height="240" alt="${element.name}_logo"></div>` }); parent.innerHTML = template1; }
+                genClientele(logos, parent1), genClientele(logos, parent1); if (screen.width < 768) { mgenClientele(imgs, parent2), mgenClientele(imgs, parent2) } 
+            </script>
+        </section>
+
+        <section>
+            <div class="content-container">
+                <div class="illsu-content">
+                    <img src="" alt="">
+                </div>
+                <div class="text-content"></div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

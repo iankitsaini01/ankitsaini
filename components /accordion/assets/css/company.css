@@ -1,0 +1,159 @@
+.company-fold-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.company-title {
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+    margin: auto;
+    color: var(--black3-color);
+}
+.company-fold-2{
+    width: 85%;
+    margin: auto;
+    padding: 3rem;
+}
+.vi-para {
+    font-family: Gilroy;
+    font-style: normal;
+    width: 55%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: var(--black-color);
+    margin: auto;
+}
+.vi-mi-row {
+    display: flex;
+    margin: 2rem auto;
+    gap: 15rem;
+    padding: 1.5rem;
+}
+
+.company-fold-3 {
+    background: #F8F7FF;
+    width: 80%;
+    border-radius: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.how-we-h2 {
+    font-size: 39px;
+    line-height: 40px;
+    color: var(--black-color);
+    padding-top: 2rem;
+}
+.how-we-p {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    padding: 1rem 5rem;
+    width: 90%;
+    margin: auto;
+    color: #514D6D;
+}
+.how-we-btn{
+    padding: 2rem;
+}
+.company-fold-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;    
+}
+.green-banner-bg{
+    background-image: url(../images/desktop_common/banners/bg_greenbanner_horizontal.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+.know-how-p{
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--white-color);
+    margin: auto;
+    padding: 2rem 1rem;
+    width: 50%;
+}
+.know-how-btn{
+    padding: 0rem 0 2rem 0;
+    margin: auto;
+}
+.btn-width {
+    width :100%;
+}
+
+@media screen and (max-width:767px) {
+    .company-title{
+        font-size: 42px;
+        line-height: 49px;
+    }
+    .company-fold-2 {
+        padding: 2rem 0rem;
+    }
+    .company-title br{
+        display: none;
+    }   
+    .vi-mi-row{
+        flex-direction: column;
+        margin: auto;
+        padding: 1rem;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    .vi-image{
+        width: 90%;
+    }
+    .vi-para {
+        width: 95%;
+        padding: 1rem;
+        margin: auto;
+        text-align: left;
+    }
+    .company-fold-3 {
+        width: 90%;
+        border-radius: 32px;
+        margin-bottom: 4rem;
+    }
+    .how-we-h2 {
+        font-size: 26px;
+        line-height: 27px;
+        margin: auto;
+    }
+    .how-we-p {
+        padding: .5rem;
+        width: 95%;
+        text-align: justify;
+    }
+    .how-we-btn{
+        padding: 1rem;
+    }
+    .btn-width {
+        background-color: var(--blue-color);
+        color: #FFFFFF;
+    }
+    .green-banner-bg{
+        background-image: url(../images/mobile_common/banner/bg-green-banner.png);
+        background-size:auto 100%;
+        width: 90%;
+    }
+    .know-how-p{
+        padding: 2rem 1rem;
+        width: 85%;
+    }
+}
